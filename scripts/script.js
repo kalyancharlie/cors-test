@@ -58,7 +58,7 @@ const callApi = async (url, method='GET') => {
         const respData = JSON.stringify(resp)
         const jsonResponse = {
             headers: [...resp.headers],
-            url: resp.urlm,
+            url: resp.url,
             type: resp.type,
             ok: resp.ok,
             status: resp.status,
