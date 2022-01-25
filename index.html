@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./styles/codemirror.css">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <script defer src="./scripts/codemirror.js"></script>
+    <script defer src="./scripts/javascript.js"></script>
+    <script defer src="./scripts/script.js"></script>
+    <title>CORS Test</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <h2 class="text-center text-success mt-3">CORS Test</h2>
+        <div class="row d-flex justify-content-center">
+            <div class="col-12 col-md-12 col-lg-10">
+                <form action="" class="mb-2" id="submission_form">
+                    <div class="row  d-flex justify-content-center align-items-center">
+                        <div class="col-12 col-sm-6 p-2">
+                            <input type="text" name="url" id="url" class="form-control" placeholder="https://example.com" required aria-required="">
+                        </div>
+                        <div class="col-5 col-sm-3 p-2">
+                            <select name="method" id="method" id="req_type" class="form-control">
+                                <option value="GET">GET</option>
+                                <option value="POST">POST</option>
+                                <option value="PUT">PUT</option>
+                                <option value="DELETE">DELETE</option>
+                            </select>
+                        </div>
+                        <div class="col-auto p-2">
+                            <button class="btn btn-primary">Send</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-12">
+            </div>
+        </div>
+    </div>
+    <div class="loader" id="loader">
+        <img src="./assets/LoadingCircleAnimated.svg" alt="">
+    </div>
+    <textarea name="editor_textarea" id="editor_textarea"></textarea>
+</body>
+</html>
